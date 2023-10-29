@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body style="max-width: 800px; margin: 0 auto">
+    <h1 style="text-align: center; font-size: 32px; margin-bottom: 30px"><%= title %></h1>
+    <form style="text-align: center; border: 1px solid rgb(161, 159, 7); padding: 10px 20px" method="POST" action="/">
+      <p style="display: flex; justify-content: center; align-items: center; margin-bottom: 20px">
+        <label style="font-weight: bold; margin-right: 30px" for="msg">Message: </label>
+        <textarea style="width: 300px" rows="4" type="text" id="msg" name="msg"></textarea>
+      </p>
+      <p style="display: flex; justify-content: center; align-items: center; margin-bottom: 20px">
+        <label style="font-weight: bold; margin-right: 30px" for="uName">User Name: </label>
+        <input style="width: 300px" type="text" id="uName" name="uName" />
+      </p>
+      <input style="color: rgb(161, 159, 7); font-weight: bold; display: block; width: 200px; margin: 0 auto; text-align: center; text-decoration: none; padding: 5px 20px; border: 1px solid rgb(161, 159, 7)" type="submit" value="Send" />
+    </form>
+  </body>
+</html>

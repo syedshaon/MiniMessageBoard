@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body style="max-width: 800px; margin: 0 auto">
+    <h1 style="text-align: center; font-size: 32px"><%= title %></h1>
+    <a style="color: rgb(161, 159, 7); font-weight: bold; display: block; width: 200px; margin: 0 auto; text-align: center; text-decoration: none; padding: 5px 20px; border: 1px solid rgb(161, 159, 7)" href="/new"> Add a new Message</a>
+    <ul style="list-style: none">
+      <% msgs.forEach(msg => { %>
+      <li style="margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px dotted brown">
+        <p><span style="font-size: 42px; color: rgb(161, 159, 7)">“</span><%= msg.text %></p>
+        <b>by <%= msg.user %></b>
+        <em>on <%= msg.added.toLocaleDateString() %></em>
+      </li>
+
+      <% }); %>
+    </ul>
+  </body>
+</html>
